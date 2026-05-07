@@ -1,0 +1,10 @@
+CREATE DATABASE task_manager;
+
+USE task_manager;
+
+CREATE TABLE tasks (
+    id VARCHAR(255) PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    status VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
